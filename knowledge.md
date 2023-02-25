@@ -1,4 +1,4 @@
-### Validation
+### Validation 参考 https://learn.microsoft.com/en-us/archive/msdn-magazine/2010/june/msdn-magazine-input-validation-enforcing-complex-business-data-rules-with-wpf
 - バリデーションの手順
 1. プロパティに制約をつける
 2. プロパティのバリデーションを行う
