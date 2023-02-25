@@ -1,4 +1,6 @@
-### Validation
+## Validation
+### アノテーションとValidator を組み合わせる方法、ValidationRule を実装する方法の2つある
+
 - 参考 https://learn.microsoft.com/en-us/archive/msdn-magazine/2010/june/msdn-magazine-input-validation-enforcing-complex-business-data-rules-with-wpf
 - バリデーションの手順
 1. プロパティに制約をつける
