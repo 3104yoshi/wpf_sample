@@ -1,13 +1,16 @@
 # Validation
+- バリデーション方法は大きく2つあり。アノテーションとValidator を組み合わせる方法、ValidationRule を実装する方法がある
+- アノテーションと Validator を組み合わせる方法だとソースコードが簡潔になる。かつ、アノテーションを使用することでプロパティの値を制限できる
+- ValidationRule を使用すると ViewModel からバリデーションのロジックを分離できる
+
 - 参考 https://learn.microsoft.com/en-us/archive/msdn-magazine/2010/june/msdn-magazine-input-validation-enforcing-complex-business-data-rules-with-wpf
 - バリデーションの手順
-1. プロパティのバリデーションを行う (アノテーションとValidator を組み合わせる方法、ValidationRule を実装する方法の2つある)
+1. プロパティのバリデーションを行う 
 1. バインディング時に System.Windows.Data.Binding.ValidatesOnExceptions プロパティをTrueにする
 1. Validation の結果に応じた処理を追加する
 
 ## プロパティのバリデーション方法
 ### アノテーションとValidator を組み合わせる方法
-##### アノテーションをつける(制約)
 - System.ComponentModel.DataAnnotations 以下のアノテーションを設定することでプロパティに制約を付加できる
 - ex)以下は、10文字までかつ、半角数字のみ、という制約を付けた例
 ``` C#
@@ -18,6 +21,11 @@
             get { return _text; }
             set { ValidateProperty(value, nameof(this.Text));
                 SetProperty(ref _text, value); }
+        }
+        
+        private void ValidateProperty<T>(T value, string propertyName)
+        {
+            Validator.ValidateProperty(value, new ValidationContext(this, null, null) { MemberName = propertyName });
         }
 ```
 
