@@ -1,5 +1,6 @@
 ﻿using Prism.Mvvm;
 using System.ComponentModel.DataAnnotations;
+using System.Windows;
 
 namespace Validation_Sample.ViewModels
 {
@@ -9,6 +10,7 @@ namespace Validation_Sample.ViewModels
 
         public MainWindowViewModel()
         {
+
         }
 
         [MaxLength(10, ErrorMessage = "10文字までしか入力できません")]
