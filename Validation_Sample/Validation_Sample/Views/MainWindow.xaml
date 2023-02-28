@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Validation_Sample.ValidationRules"
         xmlns:local2="clr-namespace:Validation_Sample.Behavior"
-        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors" xmlns:local1="clr-namespace:Validation_Sample.TriggerAction"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525"
         Prism:ViewModelLocator.AutoWireViewModel="True">
@@ -50,6 +50,13 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
+            <Button Height="50" Width="100">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <local1:WindowCloseAction></local1:WindowCloseAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
