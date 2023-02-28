@@ -36,3 +36,9 @@
           <Border BorderBrush="Red" BorderThickness="2" Margin="0,0,6,0">
               <AdornedElementPlaceholder x:Name="_el"/>
           </Border>
+
+# Behavior
+- イベントとアクション (コードビハインドに書きたい処理) をセットにするためのもの
+
+# TriggerAction
+- アクションのみを記述したもの。イベントとの紐づけはXAML側で行う
