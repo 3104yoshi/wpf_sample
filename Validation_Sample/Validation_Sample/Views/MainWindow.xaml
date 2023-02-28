@@ -5,8 +5,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Validation_Sample.ValidationRules"
+        xmlns:local1="clr-namespace:Validation_Sample.TriggerAction"
         xmlns:local2="clr-namespace:Validation_Sample.Behavior"
-        xmlns:i="http://schemas.microsoft.com/xaml/behaviors" xmlns:local1="clr-namespace:Validation_Sample.TriggerAction"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors" 
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525"
         Prism:ViewModelLocator.AutoWireViewModel="True">
