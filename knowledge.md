@@ -42,3 +42,8 @@
 
 # TriggerAction
 - アクションのみを記述したもの。イベントとの紐づけはXAML側で行う
+
+# 依存関係プロパティ (DependencyProperty)　参考 https://ikorin2.hatenablog.jp/entry/2018/11/09/075145, https://threeshark3.com/wpf-binding-usercontrol/
+- Bindingのtargetとなることができるプロパティ
+- Bindingとはプロパティと依存関係プロパティを同期させるもの
+- BindingにはSourceとTargetがあり、Sourceになれるのはプロパティ、Targetになれるのは依存関係プロパティ
