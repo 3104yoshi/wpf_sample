@@ -1,7 +1,12 @@
 # Validation
-- バリデーション方法は大きく2つあり。アノテーションとValidator を組み合わせる方法、ValidationRule を実装する方法がある
+- バリデーション方法は大きく3つある。
+1. アノテーションとValidator を組み合わせる方法
+2. ValidationRule を実装する方法
+3. INotifyDataErrorInfo を実装する方法がある
+
 - アノテーションと Validator を組み合わせる方法だとソースコードが簡潔になる。かつ、アノテーションを使用することでプロパティの値を制限できる
 - ValidationRule を使用すると ViewModel からバリデーションのロジックを分離できる
+- INotifyDataErrorInfoを使用すると、ErrorsChangedイベントを使って任意のタイミングで入力値検証の更新ができるほか、ひとつのプロパティに対して、複数のエラーを保持できる
 
 - 参考 https://learn.microsoft.com/en-us/archive/msdn-magazine/2010/june/msdn-magazine-input-validation-enforcing-complex-business-data-rules-with-wpf
 - バリデーションの手順
