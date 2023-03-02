@@ -9,10 +9,6 @@
 - INotifyDataErrorInfoを使用すると、ErrorsChangedイベントを使って任意のタイミングで入力値検証の更新ができるほか、ひとつのプロパティに対して、複数のエラーを保持できる
 
 - 参考 https://learn.microsoft.com/en-us/archive/msdn-magazine/2010/june/msdn-magazine-input-validation-enforcing-complex-business-data-rules-with-wpf
-- バリデーションの手順
-1. プロパティのバリデーションを行う 
-1. バインディング時に System.Windows.Data.Binding.ValidatesOnExceptions プロパティをTrueにする
-1. Validation の結果に応じた処理を追加する
 
 ## プロパティのバリデーション方法
 ### アノテーションとValidator を組み合わせる方法
