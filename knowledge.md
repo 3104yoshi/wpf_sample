@@ -52,3 +52,4 @@
 
 # ViewModel から別ウインドウを表示する方法
 - InteractionRequest は廃止され、IDialogService が代替のクラス
+- 参考 Prism のリリースノート https://github.com/PrismLibrary/Prism/releases
