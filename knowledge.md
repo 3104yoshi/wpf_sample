@@ -49,3 +49,6 @@
 - Bindingとはプロパティと依存関係プロパティを同期させるもの
 - BindingにはSourceとTargetがあり、Sourceになれるのはプロパティ、Targetになれるのは依存関係プロパティ
 - 参考 https://ikorin2.hatenablog.jp/entry/2018/11/09/075145, https://threeshark3.com/wpf-binding-usercontrol/
+
+# ViewModel から別ウインドウを表示する方法
+- InteractionRequest は廃止され、IDialogService が代替のクラス
